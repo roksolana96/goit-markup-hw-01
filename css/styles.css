@@ -1,0 +1,170 @@
+:root {
+    --primery-text-color:#757575;
+    --title-text-color:rgba(33, 33, 33, 1);
+    --accent-color:#ffffff;
+}
+
+body {
+    color: var(--title-text-color);
+    background: #FFFFFF;
+
+    font-family: Roboto, sans-serif ;
+    letter-spacing: 0.03em;
+}
+
+/*site-nav list*/
+
+.logo {color: #2196F3;
+    font-family: Raleway, sans-serif ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;}
+.logo-black {color: #000000;}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+
+.link {color: var(--title-text-color);} 
+.link:hover, .link:focus, .link:active {color: #2196F3;}
+
+.link-portfolio {color: var(--title-text-color);}
+.link-portfolio:hover, .link-portfolio:focus, .link-portfolio:active {color: #2196F3;}
+
+.link-contact {color: var(--title-text-color);}
+.link-contact:hover, .link-contact:focus, .link-contact:active {color: #2196F3;}
+
+
+/*contact-info*/ 
+.mail {color:var(--primery-text-color) ;}
+.mail:hover, .mail:focus, .mail:active {color: #2196F3;}
+
+
+.tel {color:var(--primery-text-color);}
+.tel:hover, .tel:focus, .tel:active {color: #2196F3;}
+
+
+/*Ефективні рішення для вашого бізнесу*/
+.main-title {color:var(--accent-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    background-color: #2F303A;} 
+.main-title-button {
+    background-color: #2196F3;
+    color:var(--accent-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;}
+.main-title-button:hover, .main-title-button:focus, 
+.main-title-button:active {color: #F5F4FA;
+    background-color:  #188CEB}
+
+/*план*/
+.main-plan {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;}
+.plan {color: var(--primery-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;}
+
+/*Чим ми займаємося*/
+.working {font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;}
+
+/*Наша команда*/
+.team {font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;}
+.name {font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;;}
+.profession {color:var(--primery-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;}
+
+/*footer*/
+.footer {background-color: #2F303A ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;}
+
+.logo-footer {color: #2196F3;
+    font-family:Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;}
+.logo-white {color: #FFFFFF; }
+
+.adress {color: var(--accent-color);}
+.adress:hover, .adress:focus, .adress:active {color: #2196F3);}
+
+.mail-footer {color:rgba(255, 255, 255, 0.6);}
+.mail-footer:hover, .mail-footer:focus, .mail-footer:active {color: #2196F3;}
+
+.tel-footer {color: rgba(255, 255, 255, 0.6);}
+.tel-footer:hover, .tel-footer:focus, .tel-footer:active {color: var(--logo-color);}
+
+
+
+/*portfolio*/
+/*button*/
+
+.menu button{
+    background: #F5F4FA;
+    border-color: #F5F4FA;
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;    
+    text-align: center;}
+.menu button:hover,
+.menu button:focus,menu:active {color: var(--accent-color);
+    background-color: #2196F3;} 
+
+
+/*СПЕЦІАЛІЗАЦІЯ*/
+.work {background-color: #FFFFFF;}
+
+.work img:hover, .work:focus, .work:active {border-color: #2196F3;}
+
+.work-list {color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;}
+
+.wokr-name {color:#2196F3;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;}
+
+
+/* --primery-text-color:#757575;*/
+/* --title-text-color:rgba(33, 33, 33, 1);*/
+/* --accent-color:#ffffff;*/
+/* --logo-color: #2196F3 */
