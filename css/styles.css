@@ -120,13 +120,13 @@ body {
 .logo-white {color: #FFFFFF; }
 
 .adress {color: var(--accent-color);}
-.adress:hover, .adress:focus, .adress:active {color: #2196F3);}
+.adress:hover, .adress:focus, .adress:active {color: #2196F3;}
 
 .mail-footer {color:rgba(255, 255, 255, 0.6);}
 .mail-footer:hover, .mail-footer:focus, .mail-footer:active {color: #2196F3;}
 
 .tel-footer {color: rgba(255, 255, 255, 0.6);}
-.tel-footer:hover, .tel-footer:focus, .tel-footer:active {color: var(--logo-color);}
+.tel-footer:hover, .tel-footer:focus, .tel-footer:active {color: #2196F3;}
 
 
 
