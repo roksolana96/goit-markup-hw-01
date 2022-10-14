@@ -22,7 +22,7 @@ body {
     line-height: 1.2;}
 .logo-black {color: #000000;}
 
-.site-nav {
+.site-nav { cursor: pointer;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -57,7 +57,7 @@ body {
     text-transform: uppercase;
 
     background-color: #2F303A;} 
-.main-title-button {
+.main-title-button { cursor: pointer;
     background-color: #2196F3;
     color:var(--accent-color);
     font-style: normal;
@@ -133,7 +133,7 @@ body {
 /*portfolio*/
 /*button*/
 
-.menu button{
+.menu button{ cursor: pointer;
     background: #F5F4FA;
     border-color: #F5F4FA;
     color: var(--title-text-color);
