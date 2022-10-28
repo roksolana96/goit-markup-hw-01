@@ -1,63 +1,104 @@
 :root {
     --primery-text-color:#757575;
     --title-text-color:rgba(33, 33, 33, 1);
-    --accent-color:#ffffff;
-}
+    --accent-color:#ffffff;}
 
-body {
+html {box-sizing: border-box;}
+
+*,
+*::after,
+*::before {box-sizing: inherit;} 
+
+.body {
+    margin: 0 auto;
     color: var(--title-text-color);
-    background: #FFFFFF;
 
     font-family: Roboto, sans-serif ;
     letter-spacing: 0.03em;
 }
+a {text-decoration: none;}
+
+/* Header */
+.container {width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 1px solid red;*/ } 
 
 /*site-nav list*/
 
-.logo {color: #2196F3;
+.page-header {
+    align-items: center;
+    padding: 0px;} 
+
+.page-header .container {
+    display: flex;
+    align-items: center;}
+
+.logo {
+    color: #2196F3;
     font-family: Raleway, sans-serif ;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;}
+    line-height: 1.2;
+
+    display: block;}
+
 .logo-black {color: #000000;}
 
-.site-nav { cursor: pointer;
+.site-nav {cursor: pointer;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    padding-bottom: 0px;
+
+    display: flex;
+    margin-left: 93px;
+    margin-top: 0px;
+    margin-bottom: 0px;}
+
+.site-nav .item + .item {margin-left: 50px;}
+
+.link {display: block ;
+    padding-top: 32px;
+    padding-bottom: 32px;}
 
 .link {color: var(--title-text-color);} 
 .link:hover, .link:focus, .link:active {color: #2196F3;}
 
-.link-portfolio {color: var(--title-text-color);}
-.link-portfolio:hover, .link-portfolio:focus, .link-portfolio:active {color: #2196F3;}
-
-.link-contact {color: var(--title-text-color);}
-.link-contact:hover, .link-contact:focus, .link-contact:active {color: #2196F3;}
-
 
 /*contact-info*/ 
-.mail {color:var(--primery-text-color) ;}
-.mail:hover, .mail:focus, .mail:active {color: #2196F3;}
+.contact-header {color:var(--primery-text-color) ;}
+.contact-header:hover, .mail:focus, .mail:active {color: #2196F3;}
 
 
-.tel {color:var(--primery-text-color);}
-.tel:hover, .tel:focus, .tel:active {color: #2196F3;}
+.contact-info {padding: 0px;
+    margin-left: auto;
+    list-style: none;
+    display: flex;}
+.contact-info .item + .item {margin-left: 50px;}
 
 
 /*Ефективні рішення для вашого бізнесу*/
-.main-title {color:var(--accent-color);
+.main {text-align: center;}
+
+.main-title {
+    background-color: #2F303A;
+    color:var(--accent-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    background-color: #2F303A;} 
-.main-title-button { cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-top: 200px;} 
+
+.main-title-button {cursor: pointer;
     background-color: #2196F3;
     color:var(--accent-color);
     font-style: normal;
@@ -67,49 +108,122 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
+
+    display: inline-block;
+    border-radius: 4px;
+    border: solid transparent;
+    padding: 10px 32px;
+    min-width:216px;
+    margin-bottom: 200px;}
+
 .main-title-button:hover, .main-title-button:focus, 
 .main-title-button:active {color: #F5F4FA;
-    background-color:  #188CEB}
+    background-color:  #2196F3;
+    border-color: #2196F3;}
 
 /*план*/
-.main-plan {
+.plan-work {text-align: left;
+    padding-top: 94px;
+    padding-bottom: 118px;}
+
+.plan-work-item {
+    display: flex;
+    margin-left: -30px;
+    padding-left: 0;}   
+
+.plan-work-item .item {
+    width: calc((100% - 30px)/4);
+    margin-left: 30px;}
+
+.mail-plan {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;}
+    line-height: 16px;
+
+    margin-top: 0;
+    margin-bottom: 10px;}
+
 .plan {color: var(--primery-text-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;}
+    line-height: 1.7;
+    margin: 0;}
 
 /*Чим ми займаємося*/
-.working {font-weight: 700;
+.working {
+    padding-top: 0;
+    padding-bottom: 94px;}
+
+.working-page {font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;}
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;}
+
+.working-img {display: flex;
+    margin-right: -30px;
+    padding-left: 0;}
+
+.working-img .img {flex-basis: calc((100% - 30px) / 3);
+    margin-right: 30px;}
+
 
 /*Наша команда*/
-.team {font-weight: 700;
+.team {
+    padding-top: 0px;
+    padding-bottom: 94px;
+    background: #F5F4FA;}
+
+.team-work {font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
-    text-align: center;}
+    text-align: center;
+
+    padding-top: 94px;
+    padding-bottom: 94px;}
+
+.work-foto {display: flex;
+    margin-right: -30px;
+    padding-left: 0;}
+
+.work-foto .foto {
+    margin-right: 30px;
+    flex-basis: calc((100% - 30px) / 3);}
+
 .name {font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;;}
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 10px;}
+
 .profession {color:var(--primery-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;}
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 30px;}
 
 /*footer*/
-.footer {background-color: #2F303A ;
+.footer {background-color: #2F303A;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;}
+    line-height: 1.7;
+
+padding-top: 60px;
+padding-bottom: 60px;}
+
+.conrainer-footer {
+padding-left: 0;} 
+ 
 
 .logo-footer {color: #2196F3;
     font-family:Raleway, sans-serif;
@@ -117,23 +231,19 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;}
-.logo-white {color: #FFFFFF; }
+.logo-white {color: #FFFFFF;}
 
 .adress {color: var(--accent-color);}
 .adress:hover, .adress:focus, .adress:active {color: #2196F3;}
 
-.mail-footer {color:rgba(255, 255, 255, 0.6);}
-.mail-footer:hover, .mail-footer:focus, .mail-footer:active {color: #2196F3;}
-
-.tel-footer {color: rgba(255, 255, 255, 0.6);}
-.tel-footer:hover, .tel-footer:focus, .tel-footer:active {color: #2196F3;}
-
+.adress-footer {color:rgba(255, 255, 255, 0.6);}
+.adress-footer:hover, .adress-footer:focus, .adress-footer:active {color: #2196F3;}
 
 
 /*portfolio*/
 /*button*/
-
-.menu button{ cursor: pointer;
+/* .menu {display:inline-flex;} */
+.menu button{cursor: pointer;
     background: #F5F4FA;
     border-color: #F5F4FA;
     color: var(--title-text-color);
@@ -141,27 +251,71 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;    
-    text-align: center;}
+    text-align: center;
+
+    display: inline-block;
+    border-radius: 4px;
+    border: solid transparent;
+
+    padding: 6px 22px;
+    min-width: 73px;}
 .menu button:hover,
 .menu button:focus,menu:active {color: var(--accent-color);
     background-color: #2196F3;} 
 
 
 /*СПЕЦІАЛІЗАЦІЯ*/
-.work {background-color: #FFFFFF;}
+.container-work{padding-bottom:50px;
+    padding-top: 94px;}
+
+.works {display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:-15px;}
+
+
+.works .work {background-color: #FFFFFF;
+    width: 370px;
+    margin: 15px;}
+
+.work img {display: block;}
+
+
+/* Рамка */
+.border-work {padding: 20px 0px 20px 23px;
+    border: 1px solid #EEEEEE;}
+
+/* .work:nth-child(3n) {margin-right: 0;}
+.work:nth-last-child(-n + 3) {margin-bottom: 0;} */
 
 .work img:hover, .work:focus, .work:active {border-color: #2196F3;}
 
-.work-list {color: var(--title-text-color);
+.work-list {
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
 
-.wokr-name {color:#2196F3;
+    /* outline: 1px solid red; */
+    margin-top: 0;
+    margin-bottom: 4px; }
+
+.wokr-name {color:#757575;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.87;}
+    line-height: 1.87;
+    
+
+    /* outline: 1px solid red; */
+    /* margin-top: 0;
+    margin-bottom: 20px;*/} 
+
+
+
+/*.works {list-style: none;
+    padding-top: 0px;
+    padding-bottom: 0px;}*/
 
 
 /* --primery-text-color:#757575;*/
