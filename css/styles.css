@@ -98,29 +98,29 @@ a {text-decoration: none;}
     margin-left: auto;
     list-style: none;
     display: inline-flex;}
-.contact-info .item-contact + .item-contact {margin-left: 50px;}
-    
-    /* іконки*/
-.icon-mail {
-    display: inline-flex;
-    content:"";
-    margin-right: 10px;
+.contact-info .item-contact + .item-contact {margin-left: 30px;}
 
+    /* іконки*/
+.item-contact {
+    display: flex;
+    content:"";
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;}
     
 .mail-sign{
+    margin-right: 10px;
     height: 10px;  
     width: 16px;
 fill: #757575;}
-.mail-sign:hover{fill: #2196F3;}
+.item-contact:hover .mail-sign{fill: #2196F3;}
 
-.tel-sign{    
+.tel-sign{ 
+    margin-right: 10px;   
     height: 16px;
     width: 10px;
 fill: #757575;} 
-.tel-sign:hover{fill: #2196F3;}
+.item-contact:hover .tel-sign{fill: #2196F3;}
 
 
 /*Ефективні рішення для вашого бізнесу*/
@@ -271,6 +271,7 @@ fill: #757575;}
 
  .soc-people {background-color: #FFFFFF;
     display: inline-flex;
+    
     height: 44px;
     width: 44px;
     border-radius: 50%;
@@ -283,32 +284,34 @@ fill: #757575;}
     margin-right: 10px;
 
 }
-.soc-people:hover {background-color: #2196F3;}
+.soc-people:hover, .soc-people:focus {background-color: #2196F3;}
 
 .instagram{height: 20px;
     width: 20px;
     background-position:center;
     fill: #AFB1B8;}
-.instagram:hover{fill: #FFFFFF;}
+.soc-people:hover .instagram{fill: #FFFFFF;}
 
 .twitter{height: 16px;
     width: 20px;
     background-position:center;
     fill: #AFB1B8;}
 .twitter:hover{fill: #FFFFFF;}
+.soc-people:hover .twitter{fill: #FFFFFF;}
 
 .facebook{height: 20px;
     width: 20px;
     background-position:center;
     fill: #AFB1B8;}
 .facebook:hover{fill: #FFFFFF;}
+.soc-people:hover .facebook{fill: #FFFFFF;}
 
 .linkedin{height: 20px;
     width: 20px;
     background-position:center;
     fill: #AFB1B8;}
 .linkedin:hover{fill: #FFFFFF;}
-
+.soc-people:hover .linkedin{fill: #FFFFFF;}
 
 .team {
     padding-top: 0px;
@@ -320,8 +323,7 @@ fill: #757575;}
 .work-foto {display: flex;
     margin-right: -30px;
     padding: 0;
-    margin: auto;
-}
+    margin: auto;}
 
 .work-foto .foto {background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -371,6 +373,8 @@ fill: #757575;}
 
     /* іконки */
 .box {display: flex;
+    cursor: pointer;
+
     height: 92px;
     width: 170px;         
     border: 1px solid #AFB1B8;
@@ -381,39 +385,38 @@ fill: #757575;}
 
     align-items: center;
     justify-content: center;}
-.box:hover{border: 1px solid #2196F3;}
-
-
+.box:hover {border: 1px solid #2196F3;}
    
 .group-yaco {height: 47px;
     width: 41px;
     fill: #AFB1B8;}
-.group-yaco:hover{fill:#2196F3;}
+.box:hover .group-yaco{fill:#2196F3;}
 
 .group-taglinehere {height: 52px;
     width: 40px;
     fill: #AFB1B8;}
-.group-taglinehere:hover{fill: #2196F3;}
+.box:hover .group-taglinehere{fill:#2196F3;}
 
 .group-company {height: 41px;
     width: 43px;
     fill: #AFB1B8;}
 .group-company:hover{fill:#2196F3;}
+.box:hover .group-company{fill:#2196F3;}
 
 .group-faster {height: 41px;
     width: 84px;
     fill: #AFB1B8;}
-.group-faster:hover{fill:#2196F3;}
+.box:hover .group-faster{fill:#2196F3;}
 
 .group-brand {height: 46px;
     width: 62px;
     fill: #AFB1B8;}
-.group-brand:hover{fill:#2196F3;}
+.box:hover .group-brand{fill:#2196F3;}
 
 .group-tagline {height: 60px;
     width: 106px;
     fill: #AFB1B8;}
-.group-tagline:hover{fill:#2196F3;}
+.box:hover .group-tagline{fill:#2196F3;}
 
 /*footer*/
 .footer-color {background-color: #2F303A;}
@@ -461,6 +464,7 @@ fill: #757575;}
     margin: 0;}
 
 .join {display: flex;
+
     height: 80px;
     left: 206px;
     margin-left: 70px;
@@ -468,10 +472,12 @@ fill: #757575;}
 
 .infofotter {display: flex;}
 
- /* іконки */
+    /* іконки */
 
  .soc-footer {background-color: rgba(255, 255, 255, 0.1);
     display: inline-flex;
+    cursor: pointer;
+
     height: 44px;
     width: 44px;
     border-radius: 50%;
