@@ -623,6 +623,88 @@ a {text-decoration: none;}
     width: 20px;
     background-position:center;}
 
+    /* підпишіться на розсилку */
+
+.mailing-block {display: flex;
+    height: 86px;
+    left: 206px;
+    margin-left: 93px;
+    margin-top: 72px;}
+
+.mailing-menu{display: inline-flex;
+padding-right:12px ;}
+
+.mailing-mail input{margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    height: 50px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2F303A;}
+    
+.mailing-mail input::placeholder{color:rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25px;} 
+    
+.mailing-mail input{
+    margin:0;
+    padding: 15px 16px;} 
+
+.mailing-text {font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin:0px;
+    padding-bottom: 20px;}
+
+.button-fly{display: inline-flex;}
+    
+.mailing-button {cursor: pointer;
+    background-color: #2196F3;
+    color:var(--accent-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center; 
+    letter-spacing: 0.06em;
+    
+    width: 200px;
+    height: 50px;
+    display: flex;
+    border-radius: 4px;
+    border: solid transparent;
+    padding: 0;
+    min-width:200px;
+    position: relative;
+    padding-left: 28px;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.mailing-button:hover, .mailing-buttont:focus, 
+.mailing-button:active {color: #F5F4FA;
+    background-color:  #2196F3;
+    border-color: #2196F3;}
+
+.icon-fly{display: inline-flex;
+position: absolute;
+right:28px;
+bottom:13px;
+
+}
+.icon-fly-button{
+    height: 24px;  
+    width: 24px;
+    fill: #FFFFFF;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.mailing-button:hover .icon-fly-button{fill: #F5F4FA;}
+
 /*portfolio*/
 /*button*/
 .menu {display:flex;
@@ -793,6 +875,140 @@ margin-right: 24px;
     padding: 0;
     align-items: center;
     justify-content: center;} 
+
+.close-button-icon{fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.close-button-icon:hover{fill: #2196F3;}
+
+
+    /* Залиште свої дані, ми вам передзвонимо */
+textarea{resize: none;}
+
+.form{width: 448px;
+    outline: 1px solid tomato;
+    margin-left:40px;
+    margin-right: 40px;}
+    
+.form-field{
+display: flex;
+flex-direction: column;} 
+
+.class-input{
+    cursor: pointer;
+    height: 40px;
+    width: 448px;
+    padding-left: 42px;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: rgba(33, 33, 33, 0.2);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.class-input:focus {border-color: #2196F3}  
+
+.form-item:last-child {
+    margin-bottom: 0;}
+.form-item{margin-bottom: 10px;
+    position: relative;}
+
+.form-block {font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #757575;}
+
+.form-img{position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    left: 15px;
+    bottom: 11px;    
+    display: inline-block;
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.form-item:focus-within >.form-img {fill: #2196F3;}
+
+.
+ /* .person-black:hover{fill: #2196F3;}
+.person-black:hover{fill: #2196F3;}
+.form-input-person:hover .person-black {fill: #2196F3;}  */
+
+/* коментар */
+::placeholder{color:rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;} 
+
+.comment-text{
+    cursor: pointer;
+    height: 120px;
+    width: 448px;
+    margin:0;
+    padding: 12px 16px;
+    margin-top: 4px;
+    font-size: 14px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: rgba(33, 33, 33, 0.2);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.comment-text:focus {border-color: #2196F3;}
+
+.form-page{font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 0px;}
+
+.form-policy{text-align: center;
+padding-top: 20px;
+padding-bottom: 30px;}
+
+.form-policy label {margin-left: 8px;}
+
+.form-policy input[type='checkbox']{}
+
+.policy-text{font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    color: #757575;}
+.policy-text-part {color: #2196F3;
+    text-decoration: underline;}
+
+.form-button{text-align: center;}
+.form-button-text {cursor: pointer;
+    background-color: #2196F3;
+    color:var(--accent-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    display: inline-block;
+    border-radius: 4px;
+    border: solid transparent;
+    padding: 10px 32px;
+    min-width:216px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.form-button-text:hover, .form-button-text:focus, 
+.form-button-text:active {color: #F5F4FA;
+    background-color:  #2196F3;
+    border-color: #2196F3;}
+
 
 /* transition-property: color, background-color, box-shadow;
 transition-duration: 250ms;
