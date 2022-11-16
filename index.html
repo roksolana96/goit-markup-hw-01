@@ -362,26 +362,32 @@
                     </label>                    
                     <label class="form-item">
                         <span class="form-block">Телефон</span>
-                        <input class="class-input" type="tel" name="tel" id="tel"  placeholder=" " required/>
+                        <input class="class-input" type="tel" name="tel"  placeholder=" " required/>
                             <svg class="form-img" >
                                 <use href="./img/icons.svg#icon-phone-black"></use>
                             </svg>
                     </label>
                     <label class="form-item">
                         <span class="form-block">Пошта</span>
-                        <input class="class-input" type="email" name="mail" id="mail" placeholder=" " required/>
+                        <input class="class-input" type="email" name="mail" placeholder=" " required/>
                         <svg class="form-img" >
                             <use href="./img/icons.svg#icon-email-black"></use>
                         </svg>
                     </label>
                     <label class="form-item">
                         <span class="form-block">Коментар</span>
-                            <textarea class="comment-text" name="comment" id="comment"  placeholder="Введіть текст" ></textarea>
+                            <textarea class="comment-text" type="comment" name="comment" placeholder="Введіть текст" ></textarea>
                     </label>
             </div>
                 <div class="form-policy">        
-                    <input type="checkbox" name="policy" id="policy" autofocus/>
-                    <label for="policy" class="policy-text">Погоджуюся з розсилкою та приймаю <span class="policy-text-part">Умови договору</span></label>
+                    <label class="policy-text">
+                        <input class="checkbox" type="checkbox" name="policy" value="" autofocus/>
+                        <svg class="checkbox-img" >
+                            <use href="./img/icons.svg#icon-check-first"></use>
+                        </svg>
+                        Погоджуюся з розсилкою та приймаю <a href="#policy" class="policy-text-part">Умови договору</a>
+                        <!-- <span class="policy-text-part">Умови договору</span> -->
+                    </label>
                 </div> 
                 <div class="form-button">
                     <button type="submit" class="form-button-text">Відправити</button>
